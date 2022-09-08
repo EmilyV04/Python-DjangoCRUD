@@ -17,41 +17,43 @@
       {% csrf_token %}
       <div class="container">
         <br />
-        <div class="form-group row">
-          <label class="col-sm-1 col-form-label"></label>
-          <div class="col-sm-4">
-            <h3 class="font-weight-bold">Update Details</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-12 form-group row">
+            <label class="col-sm-1 col-form-label"></label>
+            <div class="col-md-12 col-sm-4">
+              <h3 class="font-weight-bold text-center">Update Details</h3>
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <label class="col-sm-2 col-form-label">Employee Id:</label>
-          <div class="col-sm-4">
-            <input type="text" name="eid" id="id_eid" required maxlength="20" value="{{ employee.eid }}" />
+          <div class="col-md-12 form-group row">
+            <label class="offset-md-4 col-sm-2 col-form-label">Employee Id:</label>
+            <div class="offset-md-4 col-sm-4">
+              <input type="text" name="eid" id="id_eid" required maxlength="20" value="{{ employee.eid }}" />
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <label class="col-sm-2 col-form-label">Employee Name:</label>
-          <div class="col-sm-4">
-            <input type="text" name="ename" id="id_ename" required maxlength="100" value="{{ employee.ename }}" />
+          <div class="col-md-12 form-group row">
+            <label class="offset-md-4 col-sm-2 col-form-label">Employee Name:</label>
+            <div class="offset-md-4 col-sm-4">
+              <input type="text" name="ename" id="id_ename" required maxlength="100" value="{{ employee.ename }}" />
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <label class="col-sm-2 col-form-label">Employee Email:</label>
-          <div class="col-sm-4">
-            <input type="email" name="eemail" id="id_eemail" required maxlength="254" value="{{ employee.eemail }}" />
+          <div class="col-md-12 form-group row">
+            <label class="offset-md-4 col-sm-2 col-form-label">Employee Email:</label>
+            <div class="offset-md-4 col-sm-4">
+              <input type="email" name="eemail" id="id_eemail" required maxlength="254" value="{{ employee.eemail }}" />
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <label class="col-sm-2 col-form-label">Employee Contact:</label>
-          <div class="col-sm-4">
-            <input type="text" name="econtact" id="id_econtact" required maxlength="15" value="{{ employee.econtact }}" />
+          <div class="col-md-12 form-group row">
+            <label class="offset-md-4 col-sm-2 col-form-label">Employee Contact:</label>
+            <div class="offset-md-4 col-sm-4">
+              <input type="text" name="econtact" id="id_econtact" required maxlength="15" value="{{ employee.econtact }}" />
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <label class="col-sm-1 col-form-label"></label>
-          <div class="col-sm-4">
-            <a href="/show" class="btn btn-warning text-white">Back</a>
-            <button type="submit" class="btn btn-success">Update</button>
+          <div class="col-md-12 form-group row">
+            <label class="col-sm-1 col-form-label"></label>
+            <div class="offset-md-3 col-sm-4">
+              <a href="/show" class="btn btn-warning text-white">Back</a>
+              <button type="submit" class="btn btn-success">Update</button>
+            </div>
           </div>
         </div>
       </div>
