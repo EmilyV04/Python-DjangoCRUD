@@ -1,4 +1,4 @@
-# Python-DjangoCRUD
+# Python-DjangoCRUD-ContactBook
 
 Teniendo como referente la aplicación web creada en Django y disponible de Ejemplo en:
 
